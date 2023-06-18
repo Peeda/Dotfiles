@@ -12,3 +12,4 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.opt.clipboard = ""
+vim.opt.colorcolumn = "80"
