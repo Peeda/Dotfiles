@@ -17,6 +17,14 @@ local plugins = {
                 {name = 'nvim_lsp', keyword_length = 5},
             },
         },
+    },
+    {
+    "NvChad/nvim-colorizer.lua",
+    opts = {
+         user_default_options = {
+         names = false
+           }
+    }
     }
 }
 return plugins
