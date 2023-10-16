@@ -11,10 +11,10 @@ local plugins = {
         enabled = true,
         opts = {
             sources = {
+                {name = 'nvim_lsp', keyword_length = 3},
                 {name = 'luasnip', keyword_length = 2},
                 {name = 'path'},
                 {name = 'buffer', keyword_length = 3},
-                {name = 'nvim_lsp', keyword_length = 5},
             },
         },
     },

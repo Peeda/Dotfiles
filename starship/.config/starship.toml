@@ -6,8 +6,8 @@ $directory\
 $git_branch\
 $git_status\
 $git_metrics\
-$fill\
 $rust\
+$fill\
 $cmd_duration $time\
 $line_break\
 $character"""
@@ -27,6 +27,15 @@ style = "#f2cdcd bold"
 format = '[deez nuts]($style)[\]](red) [taking a gander at ](#eff1f5)'
 [directory]
 style = "#74c7ec bold underline"
+truncation_length = 2
+home_symbol = "\ueb06"
+[git_branch]
+symbol = " "
+format = '\[[$symbol$branch]($style)\]'
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+[rust]
+format = '\[[$symbol($version)]($style)\]'
 
 [aws]
 symbol = "  "
@@ -53,9 +62,6 @@ symbol = " "
 symbol = " "
 
 [fossil_branch]
-symbol = " "
-
-[git_branch]
 symbol = " "
 
 [golang]
