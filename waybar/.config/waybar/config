@@ -83,9 +83,9 @@
 		"format": "{icon}",
 		"on-click": "activate",
 		"format-icons": {
-			"urgent": "",
-			"active": "󰧞",
-			"default": "󰧞",
+			"urgent": "\uf111",
+			"active": "\uf111",
+			"default": "\uf111",
     "sort-by-number": true
     }
     },
