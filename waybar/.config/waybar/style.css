@@ -1,7 +1,8 @@
 * {
-  border: none;
-  border-radius: 0;
-  font-family: RobotoMono Nerd Font;
+  padding: 0;
+  margin: 0;
+  border-radius: 12px;
+  font-family: JetbrainsMono;
   font-size: 14px;
   font-weight: 500;
 }
@@ -18,85 +19,40 @@ window#waybar.hidden {
   opacity: 0.2;
 }
 
+#workspaces {
+	/* background: #282828; */
+	margin: 2px 2px 2px 2px;
+  padding: 0px 2px 0px 2px;
+	border-radius: 24px;
+  border: solid 0px #f4d9e1;
+  font-weight: normal;
+  font-style: normal;
+}
 #workspaces button {
-  padding: 0 5px;
-  color: #ebdbb2;
-  border-radius: 5px;
+    padding: 0px 5px;
+    border-radius: 24px;
+    color: #928374;
 }
 
-#workspaces button.focused {
-  background-color: #ebdbb2;
-  color: #282828;
-  border-bottom: none;
+#workspaces button.active {
+    color: #f4d9e1;
+    background-color: transparent;
+    border-radius: 24px;
 }
 
-#workspaces button.urgent {
-  background-color: #cc241d;
+#workspaces button:hover {
+	background-color: #E6B9C6;
+	color: black;
+	border-radius: 24px;
 }
 
-widget > * {
-  margin-top: 6px;
-  margin-bottom: 6px;
+.modules-right {
+  background-color: #1d2021;
+  border-radius: 8px;
+  margin: 6px 12px;
 }
-
-.modules-left > widget > * {
-  margin-left: 12px;
-  margin-right: 12px;
-}
-
-.modules-left > widget:first-child > * {
-  margin-left: 6px;
-}
-
-.modules-left > widget:last-child > * {
-  margin-right: 18px;
-}
-
-.modules-right > widget > * {
-  padding: 0 12px;
-  margin-left: 0;
-  margin-right: 0;
-  color: #282828;
-  background-color: #ebdbb2;
-}
-
-.modules-right > widget:first-child > * {
-  border-radius: 5px 0 0 5px;
-}
-
-.modules-right > widget:last-child > * {
-  border-radius: 0 5px 5px 0;
-  margin-right: 6px;
-}
-
-#mode {
-  background: transparent;
-  color: #fb4934;
-}
-
-@keyframes blink {
-  to {
-    color: #ebdbb2;
-  }
-}
-
-#battery.critical:not(.charging) {
-  animation-name: blink;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-label:focus {
-  background-color: #282828;
-}
-
-tooltip {
-  border-radius: 5px;
-  background: #504945;
-}
-
-tooltip label {
-  color: #ebdbb2;
+#pulseaudio, #backlight, #network, #battery, #clock {
+	padding: 6px 12px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
