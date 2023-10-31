@@ -2,6 +2,7 @@ co() { g++ -std=c++17 -O2 $1 -Wall -Wextra -Wshadow -Wconversion -Wfloat-equal -
 bindkey '^H' backward-kill-word
 alias cr="cargo run"
 alias mgba-qt="flatpak run io.mgba.mGBA"
+alias r="sudo modprobe -r hid-multitouch && sudo modprobe hid-multitouch"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
