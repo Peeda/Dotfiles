@@ -10,10 +10,9 @@
   "modules-center": ["hyprland/window"],
   "modules-right": ["pulseaudio", "backlight", "network", "battery", "clock"],
     "clock": {
-		"format": "  {:%A %I:%M %p}",
+		"format": " {:%I:%M %p}",
 		"tooltip": "true",
         	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        	"format-alt": " {:%m/%d}"
 	},
   "backlight": {
     "format": "{icon} {percent}%",
@@ -75,18 +74,22 @@
         }
     },
     "hyprland/workspaces": {
-    "active-only": false,
+    "persistent-workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+    },
     "all-outputs": true,
     "disable-scroll": false,
     "on-scroll-up": "hyprctl dispatch workspace -1",
     "on-scroll-down": "hyprctl dispatch workspace +1",
-		"format": "{icon}",
-		"on-click": "activate",
-		"format-icons": {
-			"urgent": "\uf111",
-			"active": "\uf111",
-			"default": "\uf111",
-    "sort-by-number": true
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+        "urgent": "\uf111",
+        "active": "\uf111",
+        "default": "\uf111",
+        "sort-by-number": true,
     }
     },
 }
