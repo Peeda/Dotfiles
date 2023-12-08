@@ -13,6 +13,7 @@ export LD_LIBRARY_PATH=/usr/local/lib
 
 path+=('/home/peter/.local/bin')
 path+=('/home/peter/.local/bin/zig')
+path+=('/home/peter/Documents/builds/Odin')
 export PATH="$PATH:$HOME/.cargo/bin"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -111,4 +112,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(starship init zsh)"
-krabby random 1-5
+krabby random 1-5 --no-gmax --no-regional
