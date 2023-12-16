@@ -3,6 +3,7 @@ bindkey '^H' backward-kill-word
 alias cr="cargo run"
 alias mgba-qt="flatpak run io.mgba.mGBA"
 alias r="sudo modprobe -r hid-multitouch && sudo modprobe hid-multitouch"
+alias nvchad="NVIM_APPNAME=nvim-nvchad nvim"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
