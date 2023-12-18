@@ -297,6 +297,7 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 vim.opt.swapfile = false
+vim.opt.colorcolumn = "80"
 
 -- [[ Basic Keymaps ]]
 
