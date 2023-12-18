@@ -1,13 +1,13 @@
 return {
-    'numToStr/Comment.nvim',
-    opts = {
-      padding = false,
-      toggler = {
-        line = '<leader>/',
-      },
-      opleader = {
-        line = '<leader>/',
-      },
+  'numToStr/Comment.nvim',
+  opts = {
+    padding = false,
+    toggler = {
+      line = '<leader>/',
     },
-    lazy = false,
+    opleader = {
+      line = '<leader>/',
+    },
+  },
+  lazy = false,
 }
