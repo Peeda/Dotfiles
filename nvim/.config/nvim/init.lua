@@ -320,6 +320,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 vim.keymap.set('n', '<Tab>', '<cmd>bnext<CR>', { desc = 'next buffer bind' })
 vim.keymap.set('n', '<S-Tab>', '<cmd>bprevious<CR>', { desc = 'last buffer bind' })
 vim.keymap.set('i', '<C-BS>', '<C-w>', { desc = "control backspace word kill" })
+vim.keymap.set('n', '<leader>yy', '<cmd>:%y+<CR>', { desc = "copy file to clipboard"})
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
