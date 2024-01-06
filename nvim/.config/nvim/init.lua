@@ -269,6 +269,7 @@ require('lazy').setup({
 -- Set highlight on search
 vim.o.hlsearch = false
 
+vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Enable mouse mode
@@ -560,11 +561,9 @@ require('mason-lspconfig').setup()
 --  define the property 'filetypes' to the map in question.
 local servers = {
   clangd = {},
-  -- gopls = {},
   pyright = {},
   rust_analyzer = {},
-  -- tsserver = {},
-  -- html = { filetypes = { 'html', 'twig', 'hbs'} },
+  zls = {},
 
   lua_ls = {
     Lua = {
