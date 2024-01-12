@@ -189,11 +189,7 @@ require('lazy').setup({
     },
   },
   --Themes
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'catppuccin-frappe'
-    end,
-  },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000, },
   { 'rose-pine/neovim', name = 'rose-pine' },
   { 'ellisonleao/gruvbox.nvim'},
   {
@@ -203,7 +199,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'catppuccin',
+        theme = 'gruvbox',
         component_separators = '|',
         section_separators = '',
       },
@@ -300,6 +296,15 @@ vim.o.termguicolors = true
 
 vim.opt.swapfile = false
 vim.opt.colorcolumn = "80"
+
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+
+vim.g.zig_fmt_parse_errors = 0
+vim.g.zig_fmt_autosave = 0
+
+vim.cmd("colorscheme gruvbox")
 
 -- [[ Basic Keymaps ]]
 
