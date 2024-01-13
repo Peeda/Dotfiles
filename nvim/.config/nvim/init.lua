@@ -199,7 +199,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'gruvbox',
+        theme = 'catppuccin',
         component_separators = '|',
         section_separators = '',
       },
@@ -304,7 +304,7 @@ vim.opt.shiftwidth = 4
 vim.g.zig_fmt_parse_errors = 0
 vim.g.zig_fmt_autosave = 0
 
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme catppuccin")
 
 -- [[ Basic Keymaps ]]
 
