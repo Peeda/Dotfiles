@@ -15,7 +15,9 @@ export LD_LIBRARY_PATH=/usr/local/lib
 path+=('/home/peter/.local/bin')
 path+=('/home/peter/.local/bin/zig')
 path+=('/home/peter/Documents/builds/Odin')
+path+=('/home/peter/Downloads/dart/dart-sdk/bin/')
 export PATH="$PATH:$HOME/.cargo/bin"
+alias rlox="cd ~/Programming/crafting-interpreters/rlox/src/"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
