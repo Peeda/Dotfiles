@@ -189,7 +189,10 @@ require('lazy').setup({
     },
   },
   --Themes
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000, },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000, opts = {
+    no_italic = true,
+  }
+  },
   { 'rose-pine/neovim', name = 'rose-pine' },
   { 'ellisonleao/gruvbox.nvim'},
   {
@@ -300,6 +303,7 @@ vim.opt.colorcolumn = "80"
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
+vim.o.scrolloff = 3
 
 vim.g.zig_fmt_parse_errors = 0
 vim.g.zig_fmt_autosave = 0
@@ -567,7 +571,6 @@ require('mason-lspconfig').setup()
 --  define the property 'filetypes' to the map in question.
 local servers = {
   clangd = {},
-  pyright = {},
   rust_analyzer = {},
   zls = {},
 

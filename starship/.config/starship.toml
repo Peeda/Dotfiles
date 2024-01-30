@@ -3,9 +3,6 @@ $os\
 $username\
 $hostname\
 $directory\
-$git_branch\
-$git_status\
-$git_metrics\
 $rust\
 $fill\
 $cmd_duration $time\
