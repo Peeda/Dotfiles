@@ -1,5 +1,6 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 fish_add_path ~/.cargo/bin
+fish_add_path ~/Builds/flutter/bin/
 alias rlox="cd ~/Programming/crafting-interpreters/rlox/src"
 alias rustboy="cd ~/Programming/rustboy/rustboy-core/src/"
 set fish_greeting
