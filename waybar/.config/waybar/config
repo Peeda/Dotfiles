@@ -65,10 +65,10 @@
     "disable-scroll": true
   },
       "hyprland/window": {
-        "format": "  {}",
+        "format": "󱄅 {}",
         "separate-outputs": true,
         "rewrite": {
-            "(.*)Brave": "  Brave",
+            "(.*)Brave": "Brave",
             "(.*)Spotify": "Spotify 󰓇",
             "(.*)Steam": "Steam 󰓓"
         }
@@ -86,9 +86,9 @@
     "format": "{icon}",
     "on-click": "activate",
     "format-icons": {
-        "urgent": "\uf111",
-        "active": "\uf111",
-        "default": "\uf111",
+        "urgent": "",
+        "active": "",
+        "default": "",
         "sort-by-number": true,
     }
     },
