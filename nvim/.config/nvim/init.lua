@@ -298,7 +298,6 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 vim.opt.swapfile = false
-vim.opt.colorcolumn = "80"
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -430,7 +429,7 @@ vim.keymap.set('n', '<leader>th', require('telescope.builtin').colorscheme, {des
 vim.defer_fn(function()
   require('nvim-treesitter.configs').setup {
     -- Add languages to be installed here that you want installed for treesitter
-    ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash', 'odin', 'latex' },
+    ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash', 'odin', 'latex', 'gleam', 'markdown' },
 
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
     auto_install = false,
@@ -608,6 +607,7 @@ mason_lspconfig.setup_handlers {
     }
   end,
 }
+require('lspconfig').gleam.setup {}
 
 -- [[ Configure nvim-cmp ]]
 -- See `:help cmp`
