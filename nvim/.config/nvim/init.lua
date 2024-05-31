@@ -88,7 +88,7 @@ require('lazy').setup({
 
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim', opts = {} },
+      { 'j-hui/fidget.nvim', opts = {notification = {window = {winblend = 0}}} },
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
@@ -191,6 +191,7 @@ require('lazy').setup({
   --Themes
   { "catppuccin/nvim", name = "catppuccin", priority = 1000, opts = {
     no_italic = true,
+    transparent_background = true,
   }
   },
   { 'rose-pine/neovim', name = 'rose-pine' },
@@ -299,9 +300,6 @@ vim.o.termguicolors = true
 
 vim.opt.swapfile = false
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
 vim.o.scrolloff = 3
 
 vim.g.zig_fmt_parse_errors = 0
@@ -330,6 +328,8 @@ vim.keymap.set('n', '<S-Tab>', '<cmd>bprevious<CR>', { desc = 'last buffer bind'
 vim.keymap.set('i', '<C-BS>', '<C-w>', { desc = "control backspace word kill" })
 vim.keymap.set('i', '<C-h>', '<C-w>', { desc = "control backspace word kill windows" })
 vim.keymap.set('n', '<leader>yy', '<cmd>:%y+<CR>', { desc = "copy file to clipboard"})
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
@@ -429,7 +429,7 @@ vim.keymap.set('n', '<leader>th', require('telescope.builtin').colorscheme, {des
 vim.defer_fn(function()
   require('nvim-treesitter.configs').setup {
     -- Add languages to be installed here that you want installed for treesitter
-    ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash', 'odin', 'latex', 'gleam', 'markdown' },
+    ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash', 'odin', 'latex', 'gleam', 'markdown'},
 
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
     auto_install = false,
@@ -572,6 +572,7 @@ local servers = {
   clangd = {},
   rust_analyzer = {},
   zls = {},
+  gopls = {},
 
   lua_ls = {
     Lua = {

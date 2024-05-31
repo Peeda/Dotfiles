@@ -1,4 +1,5 @@
 fish_add_path ~/.config/emacs/bin/
+fish_add_path ~/builds/zig/
 alias rlox="cd ~/Programming/crafting-interpreters/rlox/src"
 alias rustboy="cd ~/Programming/rustboy/rustboy-core/src/"
 set fish_greeting
