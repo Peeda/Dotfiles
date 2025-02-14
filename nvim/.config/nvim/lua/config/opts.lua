@@ -15,3 +15,4 @@ vim.o.termguicolors = true
 vim.opt.swapfile = false
 vim.o.scrolloff = 3
 vim.o.tabstop = 4
+vim.o.shiftwidth = 4

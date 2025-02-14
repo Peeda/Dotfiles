@@ -186,7 +186,7 @@ return {
 			local servers = {
 				clangd = {},
 				rust_analyzer = {},
-				julials = {},
+				--julials = {},
 				zls = {},
 				lua_ls = {
 					settings = {

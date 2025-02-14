@@ -26,6 +26,13 @@ require("lazy").setup({
 	spec = {
 		{ import = "config.plugins" },
 		{
+			"JuliaEditorSupport/julia-vim",
+			config = function()
+				vim.g.slime_input_pid = false
+				vim.g.latex_to_unicode_auto = 1
+			end,
+		},
+		{
 			"folke/tokyonight.nvim",
 			styles = {
 				comments = {
