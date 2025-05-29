@@ -21,7 +21,7 @@ format = '[\[](red)[$user]($style)@'
 [hostname]
 ssh_only = false
 style = "#f2cdcd bold"
-format = '[deez nuts]($style)[\]](red) [taking a gander at ](#eff1f5)'
+format = '[computer]($style)[\]](red) [taking a gander at ](#eff1f5)'
 [directory]
 style = "#74c7ec bold underline"
 truncation_length = 2
