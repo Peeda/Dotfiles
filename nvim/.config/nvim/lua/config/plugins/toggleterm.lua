@@ -7,4 +7,5 @@ return {
         direction = "float",
         insert_mappings = true,
     },
+    vim.keymap.set("n", "<leader>cp", ":TermExec cmd=\"g++ $CPFLAGS % && ./a.out\"<CR>"),
 }

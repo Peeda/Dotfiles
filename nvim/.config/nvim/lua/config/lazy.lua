@@ -25,6 +25,8 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
 	spec = {
 		{ import = "config.plugins" },
+		-- Highlight todo, notes, etc in comments
+		{ 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 		{
 			"JuliaEditorSupport/julia-vim",
 			config = function()
